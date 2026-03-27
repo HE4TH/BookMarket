@@ -23,7 +23,7 @@ public class Book implements Serializable{
 	}
 
 	public Book(String bookId, String name, int unitPrice) {
-		super();
+		
 		this.bookId = bookId;
 		this.name = name;
 		this.unitPrice = unitPrice;
