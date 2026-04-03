@@ -18,7 +18,7 @@
 		<%@ include file ="menu.jsp" %>
 		<div class="p-5 mb-4 bg-body-tertiary rounded-3">
 			<div class="container-fluid py-5">
-				<h1 class="display-5 fw-bold"></h1>
+				<h1 class="display-5 fw-bold">도서정보</h1>
 				<p class="col-md-8 fs-4">BookInfo</p>
 			</div>
 		</div>
@@ -32,7 +32,11 @@
 		%>
 		
 		<div class="row align-items-md-stretch">
-			<div class="col-md-12">
+			<div class="col-md-5">
+				<img alt="#" src="./resources/images/<%= book.getFilename() %>" style="width : 70%" />
+			
+			</div>
+			<div class="col-md-6">
 				<h3><b><%=book.getName() %></b></h3>
 				<p> <%=book.getDescription() %>
 				<p> <b>도서 코드 : </b><span class="badge text-bg-danger"><%=book.getBookId() %></span>
